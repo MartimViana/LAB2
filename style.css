@@ -2,7 +2,7 @@ body
 {
 
 	/* BACKGROUND */
-	/* TODO LEARN THIS BIT! */
+	/* Set the background to fill the entire screen */
  	position: fixed;
   	top: 0;
   	left: 0;
@@ -16,12 +16,15 @@ body
 	color: white;
 	font-family: Courier;	/* default text */
 	/* IMAGE */
-	background-image: url("log-background.jpg");
+	background-image: url("res/main-background.jpg");
 	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: center top;
+	width: 100%;
 	/* background-position: center; */
 }
 /*  FONTS */
-h {
+h.pageTitle {
 	font-family: Courier;
 }
 label {
@@ -40,10 +43,14 @@ label {
 	background: none;
 	border-color: grey;
 }
-.mainTab {
-
+.icon {
+	height: 40px;
+	width: 40px;
 }
-.title 
+.mainTab {					/* The page navigator tab */
+	height:5%
+}
+.title 						/* The page title */
 {
 	height: 20%;
 	/*
@@ -53,32 +60,48 @@ label {
 	line-height: 100%;
 	font-size: 500%;
 }
+
 /* BLOG CONTENT */
-.blogPost 
+.blogPost					/* The entire blog container */
 {
 	/* Border */
-	border-style: dotted;
-	border-color: darkgreen;
+	border-style: solid;
+	border-color:  #1a5276;
 	width: 80;
 	/* Text */
 	text-align: left;
 	margin: 20px;
 }
-.blogTitle 
+.blogTitle 					/* The title of the post*/
 {
 
 }
-.blogAuthor
+.blogAuthor					/* The author of the post */
 {
-
 }
-.blogContent
+a.blogData					/* Information about the blog post */
 {
-
+	font-family: System, Consolas, Terminal;
+	font-weight: normal;
 }
+.blogContent				/* The text of the blog */
+{
+}
+hr.blog {					/* The blog divider */
+	border-style: solid;
+	color: #1a5276;
+}
+
+
 /* LOGIN */
-.login 
+.login 						/* The login formulary */
 {
-	height: 100%;
+	
 }
 
+a.author {					/* The text that displays who's this page daddy */
+	font-weight: bold;
+	position: absolute;
+	left: 85%;
+	top: 95%;
+}
